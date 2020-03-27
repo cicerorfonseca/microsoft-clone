@@ -239,3 +239,36 @@ ul {
   margin-right: 30px;
   margin-bottom: 20px;
 }
+
+/* Media Queries */
+@media(max-width: 750px) {
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xbox .content p {
+    display: none;
+  }
+
+  .xbox .content h2 {
+    margin-bottom: 20px;
+  }
+
+  .carbon .content {
+    width: 90%;
+  }
+
+  .links .links-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr
+  }
+}
